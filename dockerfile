@@ -1,7 +1,7 @@
 FROM node:12.13.0-alpine as build
 ARG BUILD_MODE
 COPY . .
-RUN npm install
+RUN yarn install
 RUN npm run "build:${BUILD_MODE}"
 
 FROM nginx:1.17.5-alpine
