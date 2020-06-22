@@ -1,3 +1,4 @@
+import Toast from '../../utils/toast'
 import Storage from '../../utils/storage'
 
 const prefix = 'user/'
@@ -23,9 +24,8 @@ const login = ({ user, password }) => async dispatch => {
 
 	const success = userData !== undefined
 
-	if (success) {
-		dispatch(setUser(userData))
-	}
+	if (success) dispatch(setUser(userData))
+	else Toast.info('Credenciais inválidas')
 
 	return success
 }
