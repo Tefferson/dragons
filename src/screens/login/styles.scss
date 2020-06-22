@@ -1,0 +1,10 @@
+.login-container {
+	margin: 50px auto;
+	max-width: 100%;
+	width: 300px;
+
+	& > .login-title {
+		font-size: 20px;
+		text-align: center;
+	}
+}

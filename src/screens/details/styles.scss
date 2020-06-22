@@ -1,0 +1,11 @@
+.details-container {
+	margin: 0 auto;
+	max-width: 400px;
+
+	& > .title-row {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 4px;
+	}
+}

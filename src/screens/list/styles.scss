@@ -1,0 +1,40 @@
+.list-group-item.list-item {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+
+	.item-actions {
+		align-self: flex-end;
+		display: grid;
+		grid-column-gap: 5px;
+		visibility: hidden;
+
+		& > .item-action {
+			color: cadetblue;
+			cursor: pointer;
+			user-select: none;
+
+			&:hover {
+				opacity: .85;
+			}
+		}
+	}
+
+	&:hover {
+		.item-actions {
+			visibility: visible;
+		}
+	}
+}
+
+.list-container {
+	margin: 0 auto;
+	max-width: 400px;
+
+	& > .title-row {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 6px;
+	}
+}
